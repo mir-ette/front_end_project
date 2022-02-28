@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='' rel='stylesheet'>
+    <style>
+        .register {
+            background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+            margin-top: 3%;
+            padding: 3%;
+        }
+
+        .register-left {
+            text-align: center;
+            color: #fff;
+            margin-top: 4%;
+        }
+
+        .register-left input {
+            border: none;
+            border-radius: 1.5rem;
+            padding: 2%;
+            width: 60%;
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #383d41;
+            margin-top: 30%;
+            margin-bottom: 3%;
+            cursor: pointer;
+        }
+
+        .register-right {
+            background: #f8f9fa;
+            border-top-left-radius: 10% 50%;
+            border-bottom-left-radius: 10% 50%;
+        }
+
+        .register-left img {
+            margin-top: 15%;
+            margin-bottom: 5%;
+            width: 25%;
+            -webkit-animation: mover 2s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+
+        @-webkit-keyframes mover {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .register-left p {
+            font-weight: lighter;
+            padding: 12%;
+            margin-top: -9%;
+        }
+
+        .register .register-form {
+            padding: 10%;
+            margin-top: 10%;
+        }
+
+        .btnRegister {
+            float: right;
+            margin-top: 10%;
+            border: none;
+            border-radius: 1.5rem;
+            padding: 2%;
+            background: #0062cc;
+            color: #fff;
+            font-weight: 600;
+            width: 50%;
+            cursor: pointer;
+        }
+
+        .register .nav-tabs {
+            margin-top: 3%;
+            border: none;
+            background: #0062cc;
+            border-radius: 1.5rem;
+            width: 28%;
+            float: right;
+        }
+
+        .register .nav-tabs .nav-link {
+            padding: 2%;
+            height: 34px;
+            font-weight: 600;
+            color: #fff;
+            border-top-right-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+        }
+
+        .register .nav-tabs .nav-link:hover {
+            border: none;
+        }
+
+        .register .nav-tabs .nav-link.active {
+            width: 100px;
+            color: #0062cc;
+            border: 2px solid #0062cc;
+            border-top-left-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+        }
+
+        .register-heading {
+            text-align: center;
+            margin-top: 8%;
+            margin-bottom: -15%;
+            color: #495057;
+        }
+    </style>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sabujcha - Matcha eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="robots" content="noindex, follow" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+		<!-- all css here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/chosen.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
+		<link rel="stylesheet" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body oncontextmenu='return false' class='snippet-body'>
+    <header class="header-area gray-bg clearfix">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img alt="" src="assets/img/logo/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-6">
+                        <div class="header-bottom-right">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul>
+                                        <li class="top-hover"><a href="index.html">home</a></li>
+                                        <li><a href="about-us.html">about</a></li>
+                                        <li class="top-hover"><a href="#">Drug</a>
+                                            <ul class="submenu">
+                                                <li><a href="drug.html">Drugs</a></li>
+                                                <li><a href="skin.html">Skin & hair Care</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="top-hover"><a href="#">pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="about-us.html">about us </a></li>
+                                                <li><a href="product-details.html">product details</a></li>
+                                                <li><a href="cart-page.html">cart page</a></li>
+                                                <li><a href="companyAccount.html">Company</a></li>
+                                                <li><a href="pharmacyAccount.html">Pharmacy</a></li>
+                                                <li><a href="register.html">Register</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="add-product.html">Add Product</a></li>
+                                                <li><a href="contact.html">contact</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-currency">
+                                
+                            </div>
+                            <div class="header-cart">
+                                <a href="#">
+                                    <div class="cart-icon">
+                                        <i class="ti-shopping-cart"></i>
+                                    </div>
+                                </a>
+                                <div class="shopping-cart-content">
+                                    <ul>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Phantom Remote </a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="ion ion-close"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="single-shopping-cart">
+                                            <div class="shopping-cart-img">
+                                                <a href="#"><img alt="" src="assets/img/cart/cart-2.jpg"></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href="#">Phantom Remote</a></h4>
+                                                <h6>Qty: 02</h6>
+                                                <span>$260.00</span>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="ion ion-close"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shopping-cart-total">
+                                        <h4>Shipping : <span>$20.00</span></h4>
+                                        <h4>Total : <span class="shop-total">$260.00</span></h4>
+                                    </div>
+                                    <div class="shopping-cart-btn">
+                                        <a href="cart-page.html">view cart</a>
+                                        <a href="checkout.html">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-area">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul>
+                                <li class="top-hover"><a href="index.html">home</a></li>
+                                <li><a href="about-us.html">about</a></li>
+                                <li class="top-hover"><a href="#">Drug</a>
+                                    <ul class="submenu">
+                                        <li><a href="drug.html">Drugs</a></li>
+                                        <li><a href="skin.html">Skin & hair Care</a></li>
+                                    </ul>
+                                </li>
+                                <li class="top-hover"><a href="#">pages</a>
+                                    <ul class="submenu">
+                                        <li><a href="about-us.html">about us </a></li>
+                                        <li><a href="shop.html">shop Grid</a></li>
+                                        <li><a href="shop-list.html">shop list</a></li>
+                                        <li><a href="product-details.html">product details</a></li>
+                                        <li><a href="cart-page.html">cart page</a></li>
+                                        <li><a href="checkout.html">checkout</a></li>
+                                        <li><a href="wishlist.html">wishlist</a></li>
+                                        <li><a href="my-account.html">my account</a></li>
+                                        <li><a href="login-register.html">login / register</a></li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container register " style="height:500px;width:900px; margin-bottom:100px;">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                <h3>Welcome</h3>
+                <input type="submit" name="" value="Login" />
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Pharmacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Company</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Apply as a Pharmacy</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Pharmacy Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" value="" />
+                                </div>
+                                
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *"
+                                        value="" />
+                                </div>
+                                
+                                <input type="submit" class="btnRegister" value="Register" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">Apply as a Company</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                </div>
+                               
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Address *" value="" />
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *"
+                                        value="" />
+                                </div>
+                                
+                                <input type="submit" class="btnRegister" value="Register" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer style Start -->
+    <footer class="footer-area pt-75 gray-bg-3">
+        <div class="footer-top gray-bg-3 pb-35">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-title mb-25">
+                                <h4>My Account</h4>
+                            </div>
+                            <div class="footer-content">
+                                <ul>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="about-us.html">Order History</a></li>
+                                    <li><a href="wishlist.html">WishList</a></li>
+                                    <li><a href="#">Newsletter</a></li>
+                                    <li><a href="about-us.html">Order History</a></li>
+                                    <li><a href="#">International Orders</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-title mb-25">
+                                <h4>Information</h4>
+                            </div>
+                            <div class="footer-content">
+                                <ul>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="#">Delivery Information</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Customer Service</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-title mb-25">
+                                <h4>Quick Links</h4>
+                            </div>
+                            <div class="footer-content">
+                                <ul>
+                                    <li><a href="#">Support Center</a></li>
+                                    <li><a href="#">Term & Conditions</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">FAQS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget footer-widget-red footer-black-color mb-40">
+                            <div class="footer-title mb-25">
+                                <h4>Contact Us</h4>
+                            </div>
+                            <div class="footer-about">
+                                <p>Your current address goes to here,120 haka, angladesh</p>
+                                <div class="footer-contact mt-20">
+                                    <ul>
+                                        <li>(+008) 254 254 254 25487</li>
+                                        <li>(+009) 358 587 657 6985</li>
+                                    </ul>
+                                </div>
+                                <div class="footer-contact mt-20">
+                                    <ul>
+                                        <li>yourmail@example.com</li>
+                                        <li>example@admin.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer style End -->
+
+    
+
+    <!-- all js here -->
+    <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/ajax-mail.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type='text/javascript'></script>
+</body>
+
+</html>
+
+
+
